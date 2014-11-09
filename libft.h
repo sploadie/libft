@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:02:07 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 16:52:01 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/09 16:59:39 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,5 @@ char					*ft_strrev(char *str);
 void					ft_ptrswap(void *a, void *b);
 void					ft_memswap(void *a, void *b, size_t size);
 size_t					ft_strlcpy(char *dest, char *src, size_t size);
->>>>>>> Initial and final commit
 
 #endif
