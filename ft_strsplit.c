@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 11:10:17 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 14:15:35 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/09 16:52:23 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static char	**wary_init(char const *s, char c)
 			ccount++;
 		i++;
 	}
-	wary = (char **) malloc((ccount + 1) * sizeof(char*));
+	wary = (char **)malloc((ccount + 1) * sizeof(char*));
 	if (!wary)
 		return (NULL);
 	wary[ccount] = NULL;

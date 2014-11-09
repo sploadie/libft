@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 13:34:56 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 14:17:13 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/09 16:54:00 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 
 	if (!lst)
 		return (NULL);
-	neolst = (t_list *) malloc(sizeof(t_list));
+	neolst = (t_list *)malloc(sizeof(t_list));
 	if (!neolst)
 		return (NULL);
 	neobeg = neolst;
@@ -29,7 +29,7 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	lst = next;
 	while (lst != NULL)
 	{
-		neolst->next = (t_list *) malloc(sizeof(t_list));
+		neolst->next = (t_list *)malloc(sizeof(t_list));
 		neolst = neolst->next;
 		if (!neolst)
 			return (NULL);

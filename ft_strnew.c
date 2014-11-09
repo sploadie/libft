@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 09:39:43 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 14:16:34 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/09 16:52:56 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnew(size_t size)
 {
 	char	*neoscript;
 
-	neoscript = (char *) malloc((size + 1) * sizeof(char));
+	neoscript = (char *)malloc((size + 1) * sizeof(char));
 	if (!neoscript)
 		return (NULL);
 	ft_bzero(neoscript, size);

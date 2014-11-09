@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/04 20:35:15 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 14:16:05 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/09 16:53:06 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char		*ft_strdup(char *src)
 	int				length;
 
 	length = ft_strlen(src);
-	dup = (char *) malloc((length + 1) * sizeof(char));
+	dup = (char *)malloc((length + 1) * sizeof(char));
 	if (!dup)
 		return (dup);
 	i = 0;
