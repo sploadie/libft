@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:02:07 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 16:59:39 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/10 15:26:10 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stddef.h>
+# include <string.h>
 
 typedef struct			s_list
 {

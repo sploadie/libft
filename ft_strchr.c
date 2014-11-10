@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:56:05 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:26:48 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/10 15:29:53 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strchr(char *str, char c)
 		i++;
 	if (str[i] == c)
 		return (str + i);
-	return ('\0');
+	return (NULL);
 }
