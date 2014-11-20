@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 11:10:17 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/20 11:01:12 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/20 11:36:28 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,7 @@ char		**ft_strsplit(char const *s, char c)
 	char			**wary;
 	unsigned int	wcount;
 
-	if (!s)
-		return (NULL);
-	wary = wary_init((char*)s, c);
-	if (!wary)
+	if (!s || !(wary = wary_init((char*)s, c)))
 		return (NULL);
 	wcount = 0;
 	beg = -1;
