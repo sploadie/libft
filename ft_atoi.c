@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/01 18:44:23 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/14 18:30:08 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/20 09:01:38 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ int				ft_atoi(char *str)
 		str_int_sign = -1;
 	else if (str[0] == '+')
 		str++;
-	else if (!ft_isprint(str[0]) || str[0] == ' ')
+	else if (str[0] == '\t' || str[0] == '\n' || str[0] == '\v'
+		|| str[0] == '\f' || str[0] == '\r' || str[0] == ' ')
 		return (ft_atoi(str + 1));
 	str_int_len = ft_str_int_len(str);
 	str_int = 0;

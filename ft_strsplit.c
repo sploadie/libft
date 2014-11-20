@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 11:10:17 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/09 16:52:23 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/20 09:48:25 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,18 @@ static char	**wary_init(char const *s, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	unsigned int	i;
+	long			i;
 	unsigned int	end;
 	char			**wary;
 
+	if (!s)
+		return (NULL);
 	wary = wary_init((char*)s, c);
 	if (!wary)
 		return (NULL);
 	end = ft_strlen((char*)s);
 	i = end - 1;
-	while (i > 0)
+	while (i >= 0)
 	{
 		if (s[i] == c)
 		{
@@ -54,7 +56,7 @@ char		**ft_strsplit(char const *s, char c)
 		}
 		i--;
 	}
-	if (s[i] != c)
+	if (*s != '\0' && *s != c)
 		*(--wary) = ft_strsub((char*)s, i, end);
 	return (wary);
 }
