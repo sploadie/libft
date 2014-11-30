@@ -6,11 +6,13 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:02:18 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/04 09:33:13 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2014/11/30 16:31:20 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *str)
 {
 	char	*temp;
 
