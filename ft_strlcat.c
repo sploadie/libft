@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/03 22:39:40 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/10 17:38:22 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:32:47 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	int		fin_size;
 	char	*end_dest;
 
+	if (!dest || !src)
+		return (0);
 	dst_size = ft_strlen(dest);
 	src_size = ft_strlen(src);
 	fin_size = (int)size - (int)dst_size - 1;

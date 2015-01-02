@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/02 22:16:02 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:26:53 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:23:39 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strcat(char *dest, char *src)
 	int		i;
 	char	*end_dest;
 
+	if (!dest || !src)
+		return (NULL);
 	end_dest = dest + ft_strlen(dest);
 	i = 0;
 	while (src[i] != '\0')

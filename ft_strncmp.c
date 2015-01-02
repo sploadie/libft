@@ -6,14 +6,18 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/03 18:03:16 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:26:00 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:34:36 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include "libft.h"
+
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
 	unsigned int	i;
 
+	if (!s1 || !s2)
+		return (0);
 	if (n < 1)
 		return (0);
 	n--;

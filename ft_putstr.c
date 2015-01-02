@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:03:22 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:26:56 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:24:12 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr(char const *str)
 {
+	if (!str)
+		return ;
 	write(1, str, ft_strlen((char*)str));
 }

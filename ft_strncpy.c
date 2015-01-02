@@ -6,14 +6,18 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/02 22:16:02 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:25:58 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:34:03 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+#include "libft.h"
+
+char	*ft_strncpy(char *dest, char *src, size_t n)
 {
 	unsigned int	i;
 
+	if (!dest || !src)
+		return (NULL);
 	i = 0;
 	while (i < n && src[i] != '\0')
 	{

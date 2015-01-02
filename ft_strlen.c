@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:02:18 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/30 16:31:20 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:19:31 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(char *str)
 {
 	char	*temp;
 
+	if (!str)
+		return (0);
 	temp = str;
 	while (*temp != '\0')
 		temp++;

@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/03 22:09:53 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:26:04 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:14:32 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strncat(char *dest, char *src, int nb)
 	int		i;
 	char	*end_dest;
 
+	if (!dest || !src)
+		return (NULL);
 	if (nb <= 0)
 		return (dest);
 	end_dest = dest + ft_strlen(dest);

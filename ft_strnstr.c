@@ -6,7 +6,7 @@
 /*   By: tgauvrit <tgauvrit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 11:20:19 by tgauvrit          #+#    #+#             */
-/*   Updated: 2014/11/08 19:25:53 by tgauvrit         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:09:20 by tgauvrit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strnstr(char *str, char *to_find, size_t n)
 {
 	size_t	i;
 
+	if (!str || !to_find)
+		return (NULL);
 	if (to_find[0] == '\0')
 		return (str);
 	if (str == '\0' || n < 1)
